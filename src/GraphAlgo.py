@@ -68,7 +68,7 @@ class GraphAlgo(GraphAlgoInterface):
     def shortest_path(self, id1: int, id2: int) -> (float, list):
         path = []
         if id1 not in self.graph.get_all_v() or id2 not in self.graph.get_all_v():
-            return -1, path
+            return float('inf'), path
 
         distances = {int: float}
         q = []
@@ -89,7 +89,7 @@ class GraphAlgo(GraphAlgoInterface):
             return 0, path
 
         if id2 not in distances:
-            return -1, None
+            return float('inf'), path
         tmp = id2
         path.append(tmp)
         while distances[tmp] != 0:

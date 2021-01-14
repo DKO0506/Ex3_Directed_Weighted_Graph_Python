@@ -166,6 +166,12 @@ GraphAlgo  | GraphAlgoInterface
 
 - Those vertices compose a SCC. 
 
+### plot_graph method
+
+**This method plots the graph, if the nodes have a position, then they will be placed there**.
+
+** Otherwise the nodes will be given random positions**.
+    
 
     
 
